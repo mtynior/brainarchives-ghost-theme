@@ -35,8 +35,10 @@ gulp.task('minify-css', function(){
             .pipe(gulp.dest('./assets/css/'));
 });
 
-gulp.task('build_styles', gulpSequence('sass', 'minify-css'));
-
+gulp.task('build_styles', function(callback) {
+    gulpSequence('sass', 'minify-css')(callback)
+});
+  
 gulp.task('watch_styles', function(){
     gulp.watch('./src/sass/**/*.scss', ['build_styles']);
 });

@@ -241,6 +241,12 @@ figcaption { font-size: 12px; text-align: center; color: #5e5e5e; }
 
 .pagination .older-posts { grid-column: 3 / span 1; }
 
+.post-tags-list { margin: 0 auto; padding: 0; height: 100%; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+
+.tag { font-size: 0.9rem; margin: 5px; padding: 3px 4px 3px; border: 1px solid #ddd; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-clip: padding-box; background-color: #fff; color: #0077b5; }
+
+.tag:hover { color: #ef4056; }
+
 code, kbd, pre, samp { font-family: "Lato", arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 
 code { font-size: 0.9rem; padding: 3px 4px 3px; border: 1px solid #ddd; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-clip: padding-box; color: #424242; background-color: white; }

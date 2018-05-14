@@ -1,0 +1,16 @@
+{{^is "page"}}
+
+{{#foreach tags}}
+{{#if @first}}
+<hr />
+<div class="post-tags-list">
+{{/if}}
+  <a href="{{url}}" title="{{name}}" class="tag">
+    <span itemprop="keywords">{{name}}</span>
+  </a>
+{{#if @last}}
+</div>
+{{/if}}
+{{/foreach}}
+
+{{/is}}
