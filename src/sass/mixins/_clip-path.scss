@@ -1,0 +1,4 @@
+@mixin clip-path($path...) {
+            clip-path: $path;
+    -webkit-clip-path: $path;
+}

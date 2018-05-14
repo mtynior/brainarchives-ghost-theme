@@ -1,0 +1,30 @@
+<script>
+
+  // Disqus Short Name
+  var disqus_shortname = "SHORTNAME";
+
+  // Disqus Comments Count JS
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+
+  {{#post}}
+
+    {{#is "post"}}
+
+    // Disqus Comments JS
+    var disqus_identifier = '{{comment_id}}';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    {{/is}}
+
+  {{/post}}
+
+</script>

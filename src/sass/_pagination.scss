@@ -1,0 +1,38 @@
+.pagination {
+    background-color:       $paging-bg;
+    height:                 $paging-height;
+    padding:                $paging-padding-vertical $paging-padding-horizontal;
+    margin-bottom:          $paging-margin-bottom;
+    font-size:              $paging-font-size;
+    color:                  $paging-color;
+    display:                grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    align-items:            center;
+    box-sizing:             border-box;
+
+    a{
+        color: $white;
+    }
+
+    .pager {
+        font-weight:        $paging-pager-font-weight;
+        text-transform:     $paging-pager-text-tranform;
+    }
+
+    .newer-posts {
+        @extend .pager;
+        @extend .text-left;
+        grid-column: 1 / span 1;
+    }
+
+    .page-number {
+        @extend .text-center;
+        grid-column: 2 / span 1;
+    }
+
+    .older-posts {
+        @extend .pager;
+        @extend .text-right;
+        grid-column: 3 / span 1;
+    }
+}

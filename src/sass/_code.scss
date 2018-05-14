@@ -1,0 +1,42 @@
+code,
+kbd,
+pre,
+samp {
+  font-family: $code-font-family;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+    font-size: $code-font-size;
+    padding: 3px 4px 3px;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    background-clip: padding-box;
+    color: rgb(66, 66, 66);
+    background-color: white;
+    a > & {
+        color: inherit;
+    }
+}
+
+pre {
+    overflow: auto;
+    padding: 0 14px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    background-color: $code-window-code-bg;
+
+    > code {
+      color: inherit;
+      border: none;
+      background-color: $code-bg;
+      font-weight: $code-font-weight;
+    }
+}
+
+.hljs {
+    background-color: $code-bg;
+    width: auto;
+}

@@ -1,0 +1,30 @@
+<div class="share-post">
+    <div class="share-separator"></div>
+    <ul class="share-list">
+        <li class="twitter growable">
+            <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="facebook growable">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="google growable">
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=475,height=435');return false;">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+        </li>
+        <li class="linkedin growable">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute="true"}}&amp;title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=550,height=550');return false;">
+               <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="pocket growable">
+            <a href="https://getpocket.com/save?url={{url absolute="true"}}&amp;title={{encode title}}" onclick="window.open(this.href, 'pocket-share', 'width=475,height=435');return false;">
+               <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+    </ul>
+</div>

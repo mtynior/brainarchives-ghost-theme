@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lte IE 9 ]> <html itemscope itemtype="http://schema.org/Blog" class="ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html itemscope itemtype="http://schema.org/Blog"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{meta_title}}</title>
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="{{asset "css/brainarchives.min.css"}}">
+
+    {{ghost_head}}
+</head>
+<body>
+    {{> "header" }}
+    <main role="main">
+        {{{body}}}       
+    </main>
+    {{> "footer" }}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script defer src="{{asset "js/fontawesome-all.min.js"}}"></script>
+
+    {{ghost_foot}}
+    {{!> "disqus" }}
+    {{> "code-highlighter"}}
+</body>
+</html>

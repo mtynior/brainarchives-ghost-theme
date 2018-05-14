@@ -1,0 +1,25 @@
+{
+  "name": "brainarchives",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Michal Tynior",
+    "email": "michal.git@tynior.com"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sequence": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

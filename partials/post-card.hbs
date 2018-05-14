@@ -1,0 +1,19 @@
+<article class="post-card">
+{{#if feature_image}}
+    <a href="{{url}}">
+        <img class="post-card-feature-image" src={{feature_image}} />
+    </a>
+{{/if}}
+    <section class="post-card-title">
+        <a href="{{url}}">
+            <h2>{{title}}</h2>
+        </a>
+        <hr class="post-card-meta-separator" />
+        <time class="post-card-meta-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+    </section>
+    <section class="post-card-expert">
+         <p>{{excerpt words="55"}} <span>... <a href={{url}}>Continue &rarr;</a></span></p>
+        
+    </section>
+</article>
+

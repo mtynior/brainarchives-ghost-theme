@@ -1,0 +1,214 @@
+// Colors
+
+$white:         #fff !default;
+$black:         #000 !default;
+$athens-gray:   #f5f7f9 !default; // background
+$mercury:       rgb(158, 158, 158) !default; // separator light
+$deep-cerulean: #0077b5 !default; // link
+$bermuda-gray:  #718daa !default; // link-hover
+$tundora:       #444 !default; // headings
+$shark:         #272828 !default; // paragraph
+$red:           #ef4056 !default;
+
+// Body
+
+$body-bg: $athens-gray !default;
+$body-color: $tundora !default;
+
+
+// Links
+
+$link-color:                  $red !default;
+$link-decoration:             none !default;
+$link-hover-color:            $deep-cerulean !default;
+$link-hover-decoration:       none !default;
+
+// Fonts
+
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !default;
+$font-family-monospace:       "Lato", arial, sans-serif !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              18px !default;
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                0.75rem !default;
+$font-size-xs:                0.65rem !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+$line-height-base:            1.4 !default;
+$line-height-lg:              ($line-height-base * 1.25) !default;
+$line-height-sm:              ($line-height-base * 0.875) !default;
+$line-height-xs:              ($line-height-base * 0.75) !default;
+
+// Shadow
+
+$shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !default;
+
+// Spacing
+
+$spacer: 1rem !default;
+
+// Headings
+
+$h1-font-size:                2.5rem !default;
+$h2-font-size:                2.0rem !default;
+$h3-font-size:                1.75rem !default;
+$h4-font-size:                1.5rem !default;
+$h5-font-size:                1.25rem !default;
+$h6-font-size:                1.0rem !default;
+
+$headings-margin-top:         ($spacer * 2) !default;
+$headings-margin-bottom:      ($spacer * 1.5) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        600 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+// Paragraphs
+
+$paragraph-line-height:       1.6 !default;
+$paragraph-font-weight:       $font-weight-normal !default;
+$paragraph-font-style:        normal !default;
+$paragraph-color: $shark      !default;
+$paragraph-letter-spacing:    .01rem !default;
+$paragraph-font-smoothing:    antialiased !default;
+
+// Hr
+
+$hr-margin-y:     $spacer !default;
+$hr-border-color: $mercury !default;
+$hr-border-width: 1px !default;
+
+// Lists 
+
+$list-margin-top:               0;
+$list-margin-bottom:            1rem;
+
+$list-item-line-height-base:    $line-height-base * 1.2;
+
+// Blockquote
+
+$blockquote-bg:                 $white;
+$blockquote-padding-vertical:   0.25rem;
+$blockquote-padding-horizontal: 2.0rem;
+$blockquote-border-color:       $red;
+$blockquote-border-width:       3px;
+
+// Header
+
+$header-height:                 44px !default;
+$header-navigation-max-width:   800px !default;
+$header-font-size:              1.0rem !default;
+$header-link-color:             $link-color !default;
+$header-link-decoration:        none !default;
+$header-hover-link-color:       $link-hover-color !default;
+$header-hover-link-decoration:  none !default;
+
+$header-logo-link-color:        $tundora !default;
+$header-logo-hover-link-color:  $red !default;
+
+// Footer
+
+$footer-height:                 64px !default;
+$footer-font-size:              0.8rem !default;
+$footer-link-color:             $link-color !default;
+$footer-link-decoration:        none !default;
+$footer-hover-link-color:       $link-hover-color !default;
+$footer-hover-link-decoration:  none !default;
+
+// Post card
+
+$postcard-bg:                       $white !default;
+$post-card-margin-top:              1.25rem !default;
+$post-card-margin-bottom:           1.25rem !default;
+$post-card-xs-margin-top:           0.5rem !default;
+$post-card-xs-margin-bottom:        0.5rem !default;
+$post-card-sm-margin-top:           1rem !default;
+$post-card-sm-margin-bottom:        1rem !default;
+
+$post-card-feature-image-height:    400px;
+$post-card-feature-image-clip:      polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+$post-card-title-link-color:        $body-color !default;
+$post-card-title-hover-link-color:  $link-hover-color !default;
+
+$post-card-meta-separator-width:    200px !default;
+$post-card-meta-time-color:         $tundora !default;
+$post-card-meta-time-font-size:     0.85rem !default;
+
+$post-card-expert-padding:          20px !default;
+
+// Post
+
+$post-feature-image-width:     100% !default;
+$post-feature-image-height:    550px !default;
+$post-feature-image-clip:      polygon(0 0, 100% 0, 100% 90%, 0 100%) !default;
+
+$post-meta-separator-width:    200px !default;
+$post-meta-time-color:         $tundora !default;
+$post-meta-time-font-size:     1.0rem !default;
+
+// Share
+
+$share-height:      64px !default;
+$share-link-color:  $white !default;
+$share-link-radius: 40px !default;
+$share-font-size:   $share-link-radius / 2 !default;
+$share-spacing:     $spacer / 2 !default;
+
+// Comments 
+
+$comments-margin-top:             2rem !default;
+$comments-margin-bottom:          2rem !default;
+
+$comments-header-margin:          0 !default;
+$comments-header-font-size:       0.8rem !default;
+
+$comments-disqus-bg:              $body-bg !default;
+$comments-disqus-padding:         20px !default;
+$comments-disqus-margin-top:      2rem !default;
+$comments-disqus-margin-bottom:   2rem !default;
+$comments-max-width:              800px;
+
+// Paging
+
+$paging-bg:                   $red !default;
+$paging-color:                $white !default;
+$paging-height:               48px !default;
+$paging-margin-bottom:        1rem !default;
+$paging-padding-vertical:     0 !default;
+$paging-padding-horizontal:   20px !default;
+$paging-font-size:            0.8rem !default;
+
+$paging-pager-font-weight:    bold;
+$paging-pager-text-tranform:  uppercase;
+
+
+// code
+$code-bg:                      #333333 !default;
+$code-font-family:              $font-family-monospace !default;
+$code-font-size:                0.9rem !default;
+$code-font-weight:              600 !default;
+
+// Code Window
+
+$code-window-bg:                $code-bg !default;
+$code-window-font-family:       $code-font-family!default;
+$code-window-font-size:         $font-size-base !default;
+$code-window-spacing:           6px !default;
+$code-window-border-radius:     $code-window-spacing !default;
+$code-window-padding:           $code-window-spacing !default;
+$code-window-shadow:            $shadow !default;
+
+$code-window-title-font-size:   0.75rem !default;
+$code-window-title-color:       $white !default;
+
+$code-window-code-bg:           $code-bg;
+$code-window-code-font-size:    $code-font-size!default; 
+$code-window-code-font-family:  $code-font-family !default;
+$code-window-code-font-weight:  $code-font-weight !default;

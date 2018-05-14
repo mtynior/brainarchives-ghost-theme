@@ -1,0 +1,84 @@
+html, body {
+  color:            $body-color;
+  font-family:      $font-family-base;
+  font-size:        $font-size-base;
+  line-height:      $line-height-base;
+  margin:           0;
+  padding:          0;
+  background-color: $body-bg;
+
+  @include breakpoint(xs) {
+    font-size:        $font-size-xs;
+    line-height:      $line-height-xs;
+  }
+
+  @include breakpoint(sm) {
+    font-size:        $font-size-sm;
+    line-height:      $line-height-sm;
+  }
+
+}
+
+p {
+  font-weight:      $paragraph-font-weight;
+  font-style:       $paragraph-font-style;
+  line-height:      $paragraph-line-height;
+  color:            $paragraph-color;
+  letter-spacing:   $paragraph-letter-spacing;
+  text-rendering:   optimizeLegibility;
+  @include font-smoothing($paragraph-font-smoothing);
+}
+
+a {
+  color:           $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color:           $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top:    $headings-margin-top;
+  margin-bottom: $headings-margin-bottom;
+  font-family:   $headings-font-family;
+  line-height:   $headings-line-height;
+  color:         $headings-color;
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
+
+img {
+  max-width: 100%;
+}
+
+ol,ul, dl {
+  margin-top: $list-margin-top;
+  margin-bottom: $list-margin-bottom;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: $list-item-line-height-base;
+}
+
+blockquote {
+  background-color: $blockquote-bg;
+  margin:           0;
+  padding:          $blockquote-padding-vertical $blockquote-padding-horizontal;
+  width:            100%;
+  box-sizing:       border-box;
+  border-left:      $blockquote-border-width solid $blockquote-border-color;
+}

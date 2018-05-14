@@ -1,0 +1,53 @@
+.post-card {
+    margin-top: $post-card-margin-top;
+    margin-bottom: $post-card-margin-bottom;
+    width: 100%;
+    overflow: hidden;
+
+    @include breakpoint(xs) {
+        margin-top: $post-card-xs-margin-top;
+        margin-bottom: $post-card-xs-margin-bottom
+    }
+
+    @include breakpoint(sm) {
+        margin-top: $post-card-sm-margin-top;
+        margin-bottom: $post-card-sm-margin-bottom
+    }
+
+}
+
+.post-card-feature-image {
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-height: $post-card-feature-image-height;
+    @include clip-path($post-card-feature-image-clip);
+}
+
+.post-card-title {
+    @extend .text-center;
+
+    a {
+        color: $post-card-title-link-color;
+    }
+
+    a:hover {
+        color: $post-card-title-hover-link-color;
+    }
+}
+
+.post-card-meta-separator {
+    width: $post-card-meta-separator-width;
+}
+
+.post-card-meta-time {
+    @extend .text-center;
+    color: $post-card-meta-time-color;
+    font-size: $post-card-meta-time-font-size;
+    display: block;
+}
+
+.post-card-expert {
+    padding: $post-card-expert-padding;
+}
+
