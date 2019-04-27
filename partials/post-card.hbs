@@ -12,8 +12,11 @@
         <time class="post-card-meta-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
     </section>
     <section class="post-card-expert">
-         <p>{{excerpt words="55"}} <span>... <a href={{url}}>Continue &rarr;</a></span></p>
-        
+    {{#has tag="#article"}}
+        <p>{{excerpt}} <span> <a href={{url}}>Continue &rarr;</a></span></p>
+    {{else}}
+        {{content}}
+    {{/has}}    
     </section>
 </article>
 

@@ -1,16 +1,17 @@
 .pagination {
     background-color:       $paging-bg;
     height:                 $paging-height;
+    line-height:            $paging-height;
     padding:                $paging-padding-vertical $paging-padding-horizontal;
     margin-bottom:          $paging-margin-bottom;
     font-size:              $paging-font-size;
     color:                  $paging-color;
     display:                grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns:  100px 1fr 100px;
     align-items:            center;
     box-sizing:             border-box;
 
-    a{
+    a {
         color: $white;
     }
 
@@ -19,10 +20,17 @@
         text-transform:     $paging-pager-text-tranform;
     }
 
-    .newer-posts {
+    .link {
         @extend .pager;
-        @extend .text-left;
-        grid-column: 1 / span 1;
+        @extend .text-center;
+
+        background: $paging-bg;
+        color: $paging-color;
+        
+        &:hover {
+            background: $paging-color;
+            color: $paging-bg;
+        }
     }
 
     .page-number {
@@ -30,9 +38,13 @@
         grid-column: 2 / span 1;
     }
 
+    .newer-posts {
+        @extend .link;
+        grid-column: 1 / span 1;
+    }
+
     .older-posts {
-        @extend .pager;
-        @extend .text-right;
+        @extend .link;
         grid-column: 3 / span 1;
     }
 }

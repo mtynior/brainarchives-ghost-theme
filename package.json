@@ -1,22 +1,23 @@
 {
   "name": "brainarchives",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "author": {
     "name": "Michal Tynior",
     "email": "michal.git@tynior.com"
   },
+  "keywords": ["ghost-theme"],
   "main": "gulpfile.js",
   "dependencies": {
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-clean-css": "^3.9.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-sequence": "^1.0.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifycss": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

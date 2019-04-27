@@ -1,46 +1,44 @@
-var gulp             = require('gulp'),
-    sass             = require('gulp-sass'),
-    autoprefixer     = require('gulp-autoprefixer'),
-    sourcemaps       = require('gulp-sourcemaps'),
-    minifyCss        = require('gulp-clean-css'),
-    rename           = require('gulp-rename'),
-    gulpSequence     = require('gulp-sequence');
+const { src, dest, task, watch } = require("gulp");
+
+// CSS related plugins
+var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
+
+// Utility plugins
+var rename = require("gulp-rename");
+var sourcemaps = require("gulp-sourcemaps");
+
+// Project related variables
+var styleSRC = "./src/sass/brainarchives.scss";
+var styleURL = "./assets/css/";
+var mapURL = "./";
+
+var styleWatch = "./src/sass/**/*.scss";
+
+// Tasks
+function css(done) {
+  src([styleSRC])
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({
+        errLogToConsole: true,
+      })
+    )
+    .on("error", console.error.bind(console))
+    .pipe(
+      autoprefixer({ browsers: ["last 2 versions", "> 5%", "Firefox ESR"] })
+    )
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemaps.write(mapURL))
+    .pipe(dest(styleURL));
+  done();
+}
 
 
-gulp.task('sass', function(){
-    // sass directory
-    return gulp.src('./src/sass/**/*scss')
-            .pipe(sass())
-            //outputstyle (nested, compact, expanded, compressed)
-            .pipe(sass({outputStyle:'compact'}).on('error', sass.logError))
-            // sourcemaps
-            .pipe(sourcemaps.init())
-            // sourcemaps output directory
-            .pipe(sourcemaps.write(('./maps')))
-            // css output directory
-            .pipe(gulp.dest('./assets/css'));
-});
+function watch_files() {
+  watch(styleWatch, css);
+}
 
-gulp.task('minify-css', function(){
-   return gulp.src('./assets/css/brainarchives.css')
-            .pipe(minifyCss())
-             // autoprefixer
-            .pipe(autoprefixer({
-                browsers: ['last 5 versions'],
-                cascade: false
-            }))
-            // minify css rename
-            .pipe(rename('brainarchives.min.css'))
-            // minify css output directory
-            .pipe(gulp.dest('./assets/css/'));
-});
-
-gulp.task('build_styles', function(callback) {
-    gulpSequence('sass', 'minify-css')(callback)
-});
-  
-gulp.task('watch_styles', function(){
-    gulp.watch('./src/sass/**/*.scss', ['build_styles']);
-});
-
-gulp.task('default', ['watch_styles']);
+task("default", css);
+task("build", css);
+task("watch", watch_files);
