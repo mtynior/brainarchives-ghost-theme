@@ -62,8 +62,8 @@ $h4-font-size:                1.5rem !default;
 $h5-font-size:                1.25rem !default;
 $h6-font-size:                1.0rem !default;
 
-$headings-margin-top:         ($spacer * 2) !default;
-$headings-margin-bottom:      ($spacer * 1.5) !default;
+$headings-margin-top:         ($spacer * 0.5) !default;
+$headings-margin-bottom:      ($spacer * 0.5) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
@@ -71,6 +71,7 @@ $headings-color:              inherit !default;
 
 // Paragraphs
 
+$paragraph-margin:            0 !default;
 $paragraph-line-height:       1.6 !default;
 $paragraph-font-weight:       $font-weight-normal !default;
 $paragraph-font-style:        normal !default;

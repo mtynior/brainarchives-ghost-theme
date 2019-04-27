@@ -20,6 +20,7 @@ html, body {
 }
 
 p {
+  margin:           $paragraph-margin;
   font-weight:      $paragraph-font-weight;
   font-style:       $paragraph-font-style;
   line-height:      $paragraph-line-height;
