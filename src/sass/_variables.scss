@@ -55,15 +55,15 @@ $spacer: 1rem !default;
 
 // Headings
 
-$h1-font-size:                2.5rem !default;
-$h2-font-size:                2.0rem !default;
-$h3-font-size:                1.75rem !default;
-$h4-font-size:                1.5rem !default;
-$h5-font-size:                1.25rem !default;
-$h6-font-size:                1.0rem !default;
+$h1-font-size:                1.75rem !default;
+$h2-font-size:                1.5rem !default;
+$h3-font-size:                1.25rem !default;
+$h4-font-size:                1.15rem !default;
+$h5-font-size:                1.0rem !default;
+$h6-font-size:                0.75rem !default;
 
-$headings-margin-top:         ($spacer * 0.5) !default;
-$headings-margin-bottom:      ($spacer * 0.5) !default;
+$headings-margin-top:         ($spacer * 0.9) !default;
+$headings-margin-bottom:      ($spacer * 0.9) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
