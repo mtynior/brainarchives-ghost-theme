@@ -26,12 +26,17 @@
 
 .post-card-title {
     @extend .text-center;
+    
+    h1 {
+        font-size: $post-card-title-font-size;
+    }
 
     a {
         color: $post-card-title-link-color;
     }
 
     a:hover {
+        text-decoration: $post-card-title-hover-link-decoration;
         color: $post-card-title-hover-link-color;
     }
 }

@@ -9,6 +9,7 @@
 
     p {
         margin: 0;
+        font-size: $font-size-lg;
     }
 
     .logo {
@@ -22,7 +23,8 @@
         }
 
         a:hover {
-            color: $header-logo-hover-link-color;
+            color:              $header-logo-hover-link-color;
+            text-decoration:    $header-logo-hover-link-decoration;
         }
 
     }

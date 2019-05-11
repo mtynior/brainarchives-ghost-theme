@@ -326,13 +326,13 @@ template {
   text-transform: capitalize !important; }
 
 html, body {
-  color: #444;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000;
+  font-family: "Lato", arial, sans-serif;
   font-size: 18px;
   line-height: 1.4;
   margin: 0;
   padding: 0;
-  background-color: #f5f7f9; }
+  background-color: #fff; }
   @media (max-width: 499.98px) {
     html, body {
       font-size: 0.65rem;
@@ -347,7 +347,7 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
-  color: #272828;
+  color: #000;
   letter-spacing: 0.01rem;
   text-rendering: optimizeLegibility;
   font-smooth: antialiased;
@@ -355,11 +355,11 @@ p {
   -moz-osx-font-smoothing: antialiased; }
 
 a {
-  color: #ef4056;
+  color: #eb1e39;
   text-decoration: none; }
   a:hover {
-    color: #0077b5;
-    text-decoration: none; }
+    color: #eb1e39;
+    text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.9rem;
@@ -409,7 +409,7 @@ blockquote {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-left: 3px solid #ef4056; }
+  border-left: 3px solid #eb1e39; }
 
 hr, .separator, .share-separator {
   width: 100%;
@@ -490,7 +490,7 @@ figcaption {
 .comments-disqus {
   margin: 2rem auto 2rem auto;
   padding: 20px;
-  background-color: #f5f7f9; }
+  background-color: #fff; }
 
 .header {
   font-size: 1rem; }
@@ -499,22 +499,24 @@ figcaption {
     padding: 0;
     font-size: 2.25rem; }
   .header p {
-    margin: 0; }
+    margin: 0;
+    font-size: 22.5px; }
   .header .logo {
     margin: 0 auto;
     padding: 1rem 0;
     max-width: 800px;
     text-align: center; }
     .header .logo a {
-      color: #444; }
+      color: #000; }
     .header .logo a:hover {
-      color: #ef4056; }
+      color: #eb1e39;
+      text-decoration: none; }
   .header .navbar {
     margin: 0 auto;
     max-width: 800px;
     height: 44px;
     line-height: 44px;
-    color: #ef4056;
+    color: #eb1e39;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,7 +532,7 @@ figcaption {
       color: inherit;
       text-decoration: none; }
     .header .navbar a:hover {
-      color: #0077b5; }
+      color: #eb1e39; }
 
 .footer {
   height: 64px;
@@ -543,10 +545,10 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center; }
   .footer a {
-    color: #ef4056;
+    color: #eb1e39;
     text-decoration: none; }
   .footer a:hover {
-    color: #0077b5;
+    color: #eb1e39;
     text-decoration: none; }
 
 .post-list {
@@ -563,8 +565,8 @@ figcaption {
   margin-top: 1rem; }
 
 .post-card {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   width: 100%;
   overflow: hidden; }
   @media (max-width: 499.98px) {
@@ -584,11 +586,15 @@ figcaption {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
 
+.post-card-title h1 {
+  font-size: 36px; }
+
 .post-card-title a {
-  color: #444; }
+  color: #000; }
 
 .post-card-title a:hover {
-  color: #0077b5; }
+  text-decoration: none;
+  color: #eb1e39; }
 
 .post-card-meta-separator {
   width: 200px; }
@@ -602,7 +608,7 @@ figcaption {
   padding: 20px; }
 
 .pagination {
-  background-color: #ef4056;
+  background-color: #eb1e39;
   height: 48px;
   line-height: 48px;
   padding: 0 0;
@@ -622,11 +628,11 @@ figcaption {
     font-weight: bold;
     text-transform: uppercase; }
   .pagination .link, .pagination .newer-posts, .pagination .older-posts {
-    background: #ef4056;
+    background: #eb1e39;
     color: #fff; }
     .pagination .link:hover, .pagination .newer-posts:hover, .pagination .older-posts:hover {
       background: #fff;
-      color: #ef4056; }
+      color: #eb1e39; }
   .pagination .page-number {
     grid-column: 2 / span 1; }
   .pagination .newer-posts {
@@ -662,9 +668,9 @@ figcaption {
   -webkit-border-radius: 3px;
   background-clip: padding-box;
   background-color: #fff;
-  color: #0077b5; }
+  color: #eb1e39; }
   .tag:hover {
-    color: #ef4056; }
+    color: #eb1e39; }
 
 code,
 kbd,
@@ -788,7 +794,7 @@ pre {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  background-color: #f5f7f9; }
+  background-color: #fff; }
 
 .share-list > li {
   margin: 0 0.5rem;
