@@ -13,7 +13,7 @@ code {
     border: 1px solid #ddd;
     @include border-radius(3px);
     background-clip: padding-box;
-    color: rgb(66, 66, 66);
+    color: $red;
     background-color: white;
     a > & {
         color: inherit;
