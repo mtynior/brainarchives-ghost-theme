@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+<article class="post">
+    {{#if feature_image}}
+    <img class="post-feature-image" src={{feature_image}} />
+    {{/if}}
+    <section class="post-section-header">
+        <h1 class="post-title">{{title}}</h1>
+    </section>
+    <section class="post-content">
+        <section class="tag-list">
+            {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+            {{#foreach tags}}
+            <span>
+                <a href='{{ url }}'>
+                    {{ name }} ({{ count.posts }})
+                </a>{{#unless @last}} • {{/unless}}
+            </span>
+            {{/foreach}}
+            {{/get}}
+        </section>
+    </section>
+</article>
+{{/post}}

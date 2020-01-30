@@ -1,100 +1,88 @@
 .post-grid {
-    display: grid;
-    grid-gap: 10px 10px;
-    grid-template-columns: 1fr 1fr minmax(1rem, 800px) 1fr 1fr;
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: 1fr 1fr minmax(1rem, 800px) 1fr 1fr;
 }
 .post {
-    @extend .post-grid;
-    margin-top: 1rem;
+  @extend .post-grid;
+  margin-top: 1rem;
 }
 
-.post>* {
-   grid-column: 3 / -3;
+.post > * {
+  grid-column: 3 / -3;
 }
 
 .post-content {
-    @extend .post-grid;
-    padding: 1rem 0 0 0;
-    grid-column: 1 / -1 !important; 
+  @extend .post-grid;
+  padding: 1rem 0 0 0;
+  grid-column: 1 / -1 !important;
 
-    &>* {
-        grid-column: 3 / -3;
-    } 
+  & > * {
+    grid-column: 3 / -3;
+  }
 }
 
 .post-feature-image {
-    width: 100%;
-    height: auto;
-    max-height: $post-feature-image-height;
-    margin: 0 auto;
-    @include clip-path($post-feature-image-clip);
-    grid-column: 3 / -3;
+  width: 100%;
+  height: auto;
+  max-height: $post-feature-image-height;
+  margin: 0 auto;
+  @include clip-path($post-feature-image-clip);
+  grid-column: 3 / -3;
 }
 
 .post-title {
-    @extend .text-center;
+  @extend .text-center;
 }
 
 .post-meta-separator {
-    width: $post-meta-separator-width;
+  width: $post-meta-separator-width;
 }
 
 .post-meta-time {
-    @extend .text-center;
-    color: $post-meta-time-color;
-    font-size: $post-meta-time-font-size;
-    display: block;
+  @extend .text-center;
+  color: $post-meta-time-color;
+  font-size: $post-meta-time-font-size;
+  display: block;
 }
 
 figcaption {
-    font-size: 14px;
-    text-align: center;
-    color: rgb(94, 94, 94);
+  @extend .text-center;
+  color: $post-figcaption-color;
+  font-size: $post-figcaption-font-size;
+
+  @include breakpoint(sm) {
+    font-size: $post-figcaption-font-size * 0.75;
+  }
 }
 
-.post>blockquote {
-    grid-column: 3 / span 1;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    margin: 0;
+.post > blockquote {
+  @extend .text-center;
+  grid-column: 3 / span 1;
+  margin: 0;
+  font-size: $post-blockquote-font-size;
+  font-style: italic;
+
+  @include breakpoint(sm) {
+    font-size: $post-blockquote-font-size * 0.75;
+  }
 }
 
 .wide-element {
-    margin: 0 auto;
-    width: 100%;
+  margin: 0 auto;
+  width: 100%;
 
-    &>*{
-        width: 100%;
-    }
+  & > * {
+    width: 100%;
+  }
 }
 
 .width-large {
-    @extend .wide-element;
-    grid-column: 2 / -2 !important;
+  @extend .wide-element;
+  grid-column: 2 / -2 !important;
 }
 
 .width-ex-large {
-    @extend .wide-element;
-    grid-column: 1 / -1 !important;
-}
-
-// Ghost editor
-
-.kg-width-wide {
-    @extend .width-large;
-}
-  
-.kg-width-full {
-    @extend .width-ex-large;
-}
-
-.kg-gallery-container {
-    @extend .width-large;
-}
-
-.kg-gallery-row {
-}
-
-.kg-gallery-image {
+  @extend .wide-element;
+  grid-column: 1 / -1 !important;
 }

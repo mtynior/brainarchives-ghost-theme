@@ -1,68 +1,71 @@
 .window {
-    background: $code-window-bg;
-    font-family: $code-window-font-family;
-    font-size: $code-window-font-size;
-    padding: $code-window-padding;
-    @include border-radius($code-window-border-radius);
-    @include box-shadow($code-window-shadow); 
-    grid-column: 3 / -3;
+  background: $code-window-bg;
+  font-family: $code-window-font-family;
+  font-size: $code-window-font-size;
+  padding: $code-window-padding;
+  @include border-radius($code-window-border-radius);
+  @include box-shadow($code-window-shadow);
+  grid-column: 3 / -3;
 
-    .title {
-      @extend .text-center;
-      font-size: $code-window-title-font-size;
-      padding: $code-window-spacing;
-      color: $code-window-title-color;
-    }
-
-    .icons {
-      padding: 6px 10px;
-      position: absolute;
-      font-size: 12px;
-      height: 30px;
-      box-sizing: border-box;
-    }
-
-    .icons span, .icons:before, .icons:after {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-
-    .icons span {
-      background: #f4c025;
-    }
-
-    .icons:before {
-      content: "";
-      background: #e4514f;
-    }
-
-    .icons:after {
-      content: "";
-      background: #3ec930;
-    }
-  
-    > pre {
-      overflow: auto;
-      padding: 0 14px;
-      box-sizing: border-box;
-      width: 100%;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-  
-      > code {
-        color: inherit;
-        border: none;
-        background-color: $code-window-code-bg;
-        font-size: $code-window-code-font-size;
-        font-weight: $code-window-code-font-weight;
-        font-family: $code-window-code-font-family;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-      }
-  
-    }
-
+  .title {
+    @extend .text-center;
+    font-family: $code-window-title-font;
+    font-size: $code-window-title-font-size;
+    padding: $code-window-spacing;
+    color: $code-window-title-color;
   }
+
+  .icons {
+    padding: 6px 10px;
+    position: absolute;
+    font-size: 12px;
+    height: 30px;
+    box-sizing: border-box;
+  }
+
+  .icons span,
+  .icons:before,
+  .icons:after {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .icons span {
+    background: #f4c025;
+  }
+
+  .icons:before {
+    content: "";
+    background: #e4514f;
+  }
+
+  .icons:after {
+    content: "";
+    background: #3ec930;
+  }
+
+  > pre {
+    overflow: auto;
+    padding: 4px 6px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    white-space: pre;
+
+    @include border-radius(0);
+    @include box-shadow(none);
+
+    > code {
+      color: inherit;
+      border: none;
+      background-color: $code-window-code-bg;
+      font-size: $code-window-code-font-size;
+      font-weight: $code-window-code-font-weight;
+      font-family: $code-window-code-font-family;
+      white-space: pre;
+    }
+  }
+}

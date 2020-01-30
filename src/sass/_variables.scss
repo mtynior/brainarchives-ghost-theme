@@ -1,55 +1,56 @@
 // Colors
 
-$white:         #fff !default;
-$black:         #000 !default;
-$athens-gray:   #f5f7f9 !default; // background
-$mercury:       rgb(158, 158, 158) !default; // separator light
-$deep-cerulean: #0077b5 !default; // link
-$bermuda-gray:  #718daa !default; // link-hover
-$tundora:       #444 !default; // headings
-$shark:         #272828 !default; // paragraph
-$red:           #eb1e39 !default;
+$white: #fff !default;
+$black: #000 !default;
+$athens-gray: #f5f7f9 !default; // background
+$mercury: rgb(158, 158, 158) !default; // separator light
+$tundora: #444 !default; // headings
+$shark: #272828 !default; // paragraph
+$red: #eb1e39 !default; // links
+$strong-red: #b9132c !default; //paging
+$deep-cerulean: #0077b5 !default; // cookie notice button
+$bermuda-gray: #718daa !default; // cookie notice backgrounf
+$prussian-blue: #004266 !default; // cookie notice button hover
 
 // Body
 
 $body-bg: $white !default;
-$body-color: $black !default;
-
+$body-color: $shark !default;
 
 // Links
 
-$link-color:                  $red !default;
-$link-decoration:             none !default;
-$link-hover-color:            $red !default;
-$link-hover-decoration:       underline !default;
+$link-color: $red !default;
+$link-decoration: none !default;
+$link-hover-color: $red !default;
+$link-hover-decoration: underline !default;
 
 // Fonts
 
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !default;
-$font-family-monospace:       "Lato", arial, sans-serif !default;
-$font-family-base:            $font-family-monospace !default;
+$font-family-sans-serif: "Lato", arial, sans-serif !default;
+$font-family-monospace: "Lucida Console", Monaco, monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 
-$font-size-base:              18px !default;
-$font-size-xxl:               ($font-size-base * 2.00) !default;
-$font-size-xl:                ($font-size-base * 1.50) !default;
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                0.75rem !default;
-$font-size-xs:                0.65rem !default;
+$font-size-base: 18px !default;
+$font-size-xxl: ($font-size-base * 2) !default;
+$font-size-xl: ($font-size-base * 1.5) !default;
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-sm: 0.75rem !default;
+$font-size-xs: 0.65rem !default;
 
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
-$font-weight-base:            $font-weight-normal !default;
+$font-weight-base: $font-weight-normal !default;
 
-$line-height-base:            1.4 !default;
-$line-height-lg:              ($line-height-base * 1.25) !default;
-$line-height-sm:              ($line-height-base * 0.875) !default;
-$line-height-xs:              ($line-height-base * 0.75) !default;
+$line-height-base: 1.4 !default;
+$line-height-lg: ($line-height-base * 1.25) !default;
+$line-height-sm: ($line-height-base * 0.875) !default;
+$line-height-xs: ($line-height-base * 0.75) !default;
 
 // Shadow
 
-$shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !default;
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !default;
 
 // Spacing
 
@@ -57,174 +58,191 @@ $spacer: 1rem !default;
 
 // Headings
 
-$h1-font-size:                1.75rem !default;
-$h2-font-size:                1.5rem !default;
-$h3-font-size:                1.25rem !default;
-$h4-font-size:                1.15rem !default;
-$h5-font-size:                1.0rem !default;
-$h6-font-size:                0.75rem !default;
+$h1-font-size: 1.75rem !default;
+$h2-font-size: 1.5rem !default;
+$h3-font-size: 1.25rem !default;
+$h4-font-size: 1.15rem !default;
+$h5-font-size: 1rem !default;
+$h6-font-size: 0.75rem !default;
 
-$headings-margin-top:         ($spacer * 0.9) !default;
-$headings-margin-bottom:      ($spacer * 0.9) !default;
-$headings-font-family:        inherit !default;
-$headings-font-weight:        600 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-margin-top: ($spacer * 0.9) !default;
+$headings-margin-bottom: ($spacer * 0.9) !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: inherit !default;
 
 // Paragraphs
 
-$paragraph-margin:            0 !default;
-$paragraph-line-height:       1.6 !default;
-$paragraph-font-weight:       $font-weight-normal !default;
-$paragraph-font-style:        normal !default;
-$paragraph-color:             $body-color !default;
-$paragraph-letter-spacing:    .01rem !default;
-$paragraph-font-smoothing:    antialiased !default;
+$paragraph-margin: 0 !default;
+$paragraph-line-height: 1.6 !default;
+$paragraph-font-weight: $font-weight-normal !default;
+$paragraph-font-style: normal !default;
+$paragraph-color: $body-color !default;
+$paragraph-letter-spacing: 0.01rem !default;
+$paragraph-font-smoothing: antialiased !default;
 
 // Hr
 
-$hr-margin-y:     $spacer !default;
+$hr-margin-y: $spacer !default;
 $hr-border-color: $mercury !default;
 $hr-border-width: 1px !default;
 
-// Lists 
+// Lists
 
-$list-margin-top:               0;
-$list-margin-bottom:            1rem;
+$list-margin-top: 0;
+$list-margin-bottom: 1rem;
 
-$list-item-line-height-base:    $line-height-base * 1.2;
+$list-item-line-height-base: $line-height-base * 1.2;
 
 // Blockquote
 
-$blockquote-bg:                 $white;
-$blockquote-padding-vertical:   0.25rem;
-$blockquote-padding-horizontal: 2.0rem;
-$blockquote-border-color:       $red;
-$blockquote-border-width:       3px;
+$blockquote-bg: $white;
+$blockquote-padding-vertical: 0.25rem;
+$blockquote-padding-horizontal: 2rem;
+$blockquote-border-color: $red;
+$blockquote-border-width: 3px;
 
 // Header
 
-$header-height:                 44px !default;
-$header-navigation-max-width:   800px !default;
-$header-font-size:              1.0rem !default;
-$header-link-color:             $link-color !default;
-$header-link-decoration:        none !default;
-$header-hover-link-color:       $link-hover-color !default;
-$header-hover-link-decoration:  none !default;
+$header-height: 44px !default;
+$header-navigation-max-width: 800px !default;
+$header-font-size: 1rem !default;
+$header-link-color: $link-color !default;
+$header-link-decoration: none !default;
+$header-hover-link-color: $shark !default;
+$header-hover-link-decoration: none !default;
 
-$header-logo-link-color:            $black !default;
-$header-logo-hover-link-color:      $red !default;
+$header-logo-width: 96px !default;
+$header-logo-link-color: $shark !default;
+$header-logo-hover-link-color: $red !default;
 $header-logo-hover-link-decoration: none !default;
 
+// Navbar
+$navbar-font-size: larger !default;
+$navbar-font-weight: bold !default;
+$navbar-link-color: $red !default;
+$navbar-link-decoration: none !default;
+$navbar-hover-link-color: $shark !default;
+$navbar-hover-link-decoration: none !default;
 
 // Footer
 
-$footer-height:                 64px !default;
-$footer-font-size:              0.8rem !default;
-$footer-link-color:             $link-color !default;
-$footer-link-decoration:        none !default;
-$footer-hover-link-color:       $link-hover-color !default;
-$footer-hover-link-decoration:  none !default;
+$footer-height: 64px !default;
+$footer-margin-top: 1rem !default;
+$footer-font-size: 0.8rem !default;
+$footer-link-color: $link-color !default;
+$footer-link-decoration: none !default;
+$footer-hover-link-color: $link-hover-color !default;
+$footer-hover-link-decoration: none !default;
 
 // Post card
 
-$postcard-bg:                       $white !default;
-$post-card-margin-top:              2.5rem !default;
-$post-card-margin-bottom:           2.5rem !default;
-$post-card-xs-margin-top:           0.5rem !default;
-$post-card-xs-margin-bottom:        0.5rem !default;
-$post-card-sm-margin-top:           1rem !default;
-$post-card-sm-margin-bottom:        1rem !default;
+$postcard-bg: $white !default;
+$post-card-margin-top: 2.5rem !default;
+$post-card-margin-bottom: 2.5rem !default;
+$post-card-xs-margin-top: 0.5rem !default;
+$post-card-xs-margin-bottom: 0.5rem !default;
+$post-card-sm-margin-top: 1rem !default;
+$post-card-sm-margin-bottom: 1rem !default;
 
-$post-card-feature-image-height:    400px;
-$post-card-feature-image-clip:      polygon(0 0, 100% 0, 100% 90%, 0 100%);
+$post-card-feature-image-height: 400px;
+$post-card-feature-image-clip: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
-$post-card-title-font-size:             $font-size-xxl !default;
-$post-card-title-link-color:            $body-color !default;
-$post-card-title-hover-link-color:      $link-hover-color !default;
+$post-card-title-font-size: $font-size-xxl !default;
+$post-card-title-link-color: $body-color !default;
+$post-card-title-hover-link-color: $link-hover-color !default;
 $post-card-title-hover-link-decoration: none !default;
 
+$post-card-meta-separator-width: 200px !default;
+$post-card-meta-time-color: $tundora !default;
+$post-card-meta-time-font-size: 0.85rem !default;
 
-$post-card-meta-separator-width:    200px !default;
-$post-card-meta-time-color:         $tundora !default;
-$post-card-meta-time-font-size:     0.85rem !default;
-
-$post-card-expert-padding:          20px !default;
+$post-card-expert-padding: 20px !default;
 
 // Post
 
-$post-feature-image-width:     100% !default;
-$post-feature-image-height:    550px !default;
-$post-feature-image-clip:      polygon(0 0, 100% 0, 100% 90%, 0 100%) !default;
+$post-feature-image-width: 100% !default;
+$post-feature-image-height: 550px !default;
+$post-feature-image-clip: polygon(0 0, 100% 0, 100% 90%, 0 100%) !default;
 
-$post-meta-separator-width:    200px !default;
-$post-meta-time-color:         $tundora !default;
-$post-meta-time-font-size:     1.0rem !default;
-
+$post-meta-separator-width: 200px !default;
+$post-meta-time-color: $tundora !default;
+$post-meta-time-font-size: 1rem !default;
+$post-figcaption-font-size: $font-size-sm !default;
+$post-figcaption-color: rgb(94, 94, 94) !default;
+$post-blockquote-font-size: 20px !default;
 
 // Tags
 
-$tag-font-size:         0.9rem !default; 
-$tag-bg-color:          $white !default;
-$tag-link-color:        $link-hover-color !default;
-$tag-link-hover-color:  $link-color !default;
+$tag-font-size: 0.9rem !default;
+$tag-bg-color: $white !default;
+$tag-link-color: $link-hover-color !default;
+$tag-link-hover-color: $link-color !default;
 
 // Share
 
-$share-height:      64px !default;
-$share-link-color:  $white !default;
+$share-height: 64px !default;
+$share-link-color: $white !default;
 $share-link-radius: 40px !default;
-$share-font-size:   $share-link-radius / 2 !default;
-$share-spacing:     $spacer / 2 !default;
+$share-font-size: $share-link-radius / 2 !default;
+$share-spacing: $spacer / 2 !default;
 
-// Comments 
+// Comments
 
-$comments-margin-top:             2rem !default;
-$comments-margin-bottom:          2rem !default;
+$comments-margin-top: 2rem !default;
+$comments-margin-bottom: 2rem !default;
 
-$comments-header-margin:          0 !default;
-$comments-header-font-size:       0.8rem !default;
+$comments-header-margin: 0 !default;
+$comments-header-font-size: 0.8rem !default;
 
-$comments-disqus-bg:              $body-bg !default;
-$comments-disqus-padding:         20px !default;
-$comments-disqus-margin-top:      2rem !default;
-$comments-disqus-margin-bottom:   2rem !default;
-$comments-max-width:              800px;
+$comments-disqus-bg: $body-bg !default;
+$comments-disqus-padding: 20px !default;
+$comments-disqus-margin-top: 2rem !default;
+$comments-disqus-margin-bottom: 2rem !default;
+$comments-max-width: 800px;
 
 // Paging
 
-$paging-bg:                   $red !default;
-$paging-color:                $white !default;
-$paging-height:               48px !default;
-$paging-margin-bottom:        1rem !default;
-$paging-padding-vertical:     0 !default;
-$paging-padding-horizontal:   0 !default;
-$paging-font-size:            0.8rem !default;
+$paging-bg: $red !default;
+$paging-color: $white !default;
+$paging-link-color: $red !default;
+$paging-link-hover-color: $strong-red !default;
+$paging-height: 48px !default;
+$paging-margin-bottom: 1rem !default;
+$paging-padding-vertical: 0 !default;
+$paging-padding-horizontal: 0 !default;
+$paging-font-size: 0.8rem !default;
 
-$paging-pager-font-weight:    bold;
-$paging-pager-text-tranform:  uppercase;
+$paging-pager-font-weight: bold;
+$paging-pager-text-tranform: uppercase;
 
-
-// code
-$code-bg:                      #333333 !default;
-$code-font-family:              $font-family-monospace !default;
-$code-font-size:                0.9rem !default;
-$code-font-weight:              600 !default;
+// Code
+$code-bg: #333333 !default;
+$code-font-family: $font-family-monospace !default;
+$code-font-size: $font-size-base * 0.8 !default;
+$code-font-weight: normal !default;
 
 // Code Window
+$code-window-bg: $code-bg !default;
+$code-window-font-family: $code-font-family !default;
+$code-window-font-size: $code-font-size !default;
+$code-window-spacing: 6px !default;
+$code-window-border-radius: $code-window-spacing !default;
+$code-window-padding: $code-window-spacing !default;
+$code-window-shadow: $shadow !default;
 
-$code-window-bg:                $code-bg !default;
-$code-window-font-family:       $code-font-family!default;
-$code-window-font-size:         $font-size-base !default;
-$code-window-spacing:           6px !default;
-$code-window-border-radius:     $code-window-spacing !default;
-$code-window-padding:           $code-window-spacing !default;
-$code-window-shadow:            $shadow !default;
+$code-window-title-font: $font-family-sans-serif !default;
+$code-window-title-font-size: 0.75rem !default;
+$code-window-title-color: $white !default;
 
-$code-window-title-font-size:   0.75rem !default;
-$code-window-title-color:       $white !default;
+$code-window-code-bg: $code-bg;
+$code-window-code-font-size: $code-font-size !default;
+$code-window-code-font-family: $code-font-family !default;
+$code-window-code-font-weight: $code-font-weight !default;
 
-$code-window-code-bg:           $code-bg;
-$code-window-code-font-size:    $code-font-size!default; 
-$code-window-code-font-family:  $code-font-family !default;
-$code-window-code-font-weight:  $code-font-weight !default;
+// Cookie notice
+$cookie-notice-background-color: $bermuda-gray !default;
+$cookie-notice-color: $white !default;
+$cookie-notice-button-color: $deep-cerulean !default;
+$cookie-notice-button--hover-color: $prussian-blue !default;

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--[if lte IE 9 ]> <html itemscope itemtype="http://schema.org/Blog" class="ie"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html itemscope itemtype="http://schema.org/Blog"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html itemscope itemtype="http://schema.org/Blog">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,12 +18,14 @@
 
     {{ghost_head}}
 </head>
+
 <body>
     {{> "header" }}
     <main role="main">
-        {{{body}}}       
+        {{{body}}}
     </main>
     {{> "footer" }}
+    {{> "cookie-notice"}}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script defer src="{{asset "js/fontawesome-all.min.js"}}"></script>
@@ -28,5 +33,7 @@
     {{ghost_foot}}
     {{!> "disqus" }}
     {{> "code-highlighter"}}
+
 </body>
+
 </html>

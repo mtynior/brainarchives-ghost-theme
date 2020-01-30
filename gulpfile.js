@@ -26,7 +26,7 @@ function css(done) {
     )
     .on("error", console.error.bind(console))
     .pipe(
-      autoprefixer({ browsers: ["last 2 versions", "> 5%", "Firefox ESR"] })
+      autoprefixer()
     )
     .pipe(rename({ suffix: ".min" }))
     .pipe(sourcemaps.write(mapURL))

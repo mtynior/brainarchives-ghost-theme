@@ -1,25 +1,25 @@
 .post-tags-list {
-    margin:             0 auto;
-    padding:            0;
-    height:             100%;
-    width:              100%;
-    display:            flex;
-    flex-direction:     row;
-    flex-wrap:          wrap;
-    justify-content:    center;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tag {
-    font-size: $tag-font-size;
-    margin: 5px;
-    padding: 3px 4px 3px;
-    border: 1px solid #ddd;
-    @include border-radius(3px);
-    background-clip: padding-box;
-    background-color: $tag-bg-color;
-    color: $tag-link-color;
-    
-    &:hover {
-        color: $tag-link-hover-color;
-    }
+  font-size: $tag-font-size;
+  margin: 5px;
+  padding: 3px 4px 3px;
+  border: 1px solid #ddd;
+  @include border-radius(3px);
+  background-clip: padding-box;
+  background-color: $tag-bg-color;
+  color: $tag-link-color;
+
+  &:hover {
+    color: $tag-link-hover-color;
+  }
 }

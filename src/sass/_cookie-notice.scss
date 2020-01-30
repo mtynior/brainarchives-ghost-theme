@@ -1,0 +1,43 @@
+#cookie-notice {
+  color: $cookie-notice-color;
+  background-color: $cookie-notice-background-color;
+  width: 100%;
+  max-width: 300px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin: 0px;
+  padding: 20px;
+  @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+  @include border-radius(5px);
+  text-align: left;
+  z-index: 1000000;
+  box-sizing: border-box;
+  visibility: hidden;
+
+  @include breakpoint(sm) {
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  p {
+    color: inherit;
+  }
+
+  button {
+    color: inherit;
+    background: $cookie-notice-button-color;
+    border: 0;
+    padding: 8px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: $cookie-notice-button--hover-color;
+    }
+  }
+}

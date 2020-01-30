@@ -5,38 +5,46 @@ samp {
   font-family: $code-font-family;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 code {
-    font-size: $code-font-size;
-    padding: 3px 4px 3px;
-    border: 1px solid #ddd;
-    @include border-radius(3px);
-    background-clip: padding-box;
-    color: $red;
-    background-color: white;
-    a > & {
-        color: inherit;
-    }
+  padding: 3px 4px 3px;
+  border: 1px solid #ddd;
+  @include border-radius(3px);
+  background-clip: padding-box;
+  color: $red;
+  background-color: white;
+  font-size: $code-font-size;
+
+  @include breakpoint(sm) {
+    font-size: $post-figcaption-font-size * 0.75;
+  }
+
+  a > & {
+    color: inherit;
+  }
 }
 
 pre {
-    overflow: auto;
-    padding: 0 14px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    background-color: $code-window-code-bg;
+  overflow: auto;
+  padding: 0 14px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  background-color: $code-window-code-bg;
+  @include border-radius($code-window-border-radius);
+  @include box-shadow($code-window-shadow);
 
-    > code {
-      color: inherit;
-      border: none;
-      background-color: $code-bg;
-      font-weight: $code-font-weight;
-    }
+  > code {
+    color: inherit;
+    border: none;
+    background-color: $code-bg;
+    font-weight: $code-font-weight;
+  }
 }
 
 .hljs {
-    background-color: $code-bg;
-    width: auto;
+  background-color: $code-bg;
+  width: auto;
 }

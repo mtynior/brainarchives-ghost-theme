@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,14 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/brainarchives.min.css"}}" />
 </head>
+
 <body>
     <main role="main">
         <section class="error-message">
             <h1><i class="fas fa-poo fa-5x"></i></h1>
-            <p>{{code}} - {{message}}</p>
+            <p>{{statusCode}} - {{message}}</p>
             <a href="{{@site.url}}">Go to the front page</a>
         </section>
     </main>
     <script defer src="{{asset "js/fontawesome-all.min.js"}}"></script>
 </body>
+
 </html>

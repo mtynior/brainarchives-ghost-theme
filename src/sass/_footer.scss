@@ -1,17 +1,18 @@
 .footer {
-    height:          $footer-height;
-    line-height:     $footer-height;
-    font-size:       $footer-font-size;
-    display:         flex;
-    justify-content: center;
+  height: $footer-height;
+  line-height: $footer-height;
+  margin-top: $footer-margin-top;
+  font-size: $footer-font-size;
+  display: flex;
+  justify-content: center;
 
-    a {
-        color:           $footer-link-color;
-        text-decoration: $footer-link-decoration;
-    }
+  a {
+    color: $footer-link-color;
+    text-decoration: $footer-link-decoration;
+  }
 
-    a:hover {
-        color:           $footer-hover-link-color;
-        text-decoration: $footer-hover-link-decoration;
-    }
+  a:hover {
+    color: $footer-hover-link-color;
+    text-decoration: $footer-hover-link-decoration;
+  }
 }

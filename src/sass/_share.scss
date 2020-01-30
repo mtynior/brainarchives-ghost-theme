@@ -1,67 +1,74 @@
 .share-post {
-    height: $share-height;
-    position: relative;
+  height: $share-height;
+  position: relative;
 }
 
 .share-separator {
-    @extend .separator;
-    position:   absolute;
-    margin:     ($share-height / 2)  0;
+  @extend .separator;
+  position: absolute;
+  margin: ($share-height / 2) 0;
 }
 
 .share-list {
-    @extend .text-center;
-    position:           relative;
-    margin:             0 auto;
-    padding:            0;
-    height:             100%;
-    width:              fit-content;
-    display:            flex;
-    flex-wrap:          nowrap;
-    justify-content:    center;
-    align-items:        center;
-    list-style:         none;
-    background-color:   $body-bg;
+  @extend .text-center;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: $body-bg;
 }
 
-.share-list > li {   
-    margin:         0 $share-spacing;
-    width:          $share-link-radius;
-    height:         $share-link-radius;
-    line-height:    $share-link-radius;
-    font-size:      $share-font-size;
-    @include border-radius(50%);
+.share-list > li {
+  margin: 0 $share-spacing;
+  width: $share-link-radius;
+  height: $share-link-radius;
+  line-height: $share-link-radius;
+  font-size: $share-font-size;
+  @include border-radius(50%);
 
-    > a {
-        color:          $share-link-color;
-        vertical-align: middle;
-    }
+  @include breakpoint(sm) {
+    width: $share-link-radius * 0.75;
+    height: $share-link-radius * 0.75;
+    line-height: $share-link-radius * 0.75;
+    font-size: $share-font-size * 0.75;
+  }
+
+  > a {
+    color: $share-link-color;
+    vertical-align: middle;
+  }
 }
 
-.growable { 
-    transition: all .2s ease-in-out;
+.growable {
+  transition: all 0.2s ease-in-out;
 }
 
 .growable:hover {
-    transform: scale(1.4); 
+  transform: scale(1.4);
 }
 
 .twitter {
-    background-color: #55acee;
+  background-color: #55acee;
 }
 
 .facebook {
-    background-color: #3b5999;
+  background-color: #3b5999;
 }
 
 .google {
-    background-color: red;
+  background-color: red;
 }
 
 .linkedin {
-    background-color: #0077b5;
+  background-color: #0077b5;
 }
 
 .pocket {
-    background-color: #ef4056;
+  background-color: #ef4056;
 }

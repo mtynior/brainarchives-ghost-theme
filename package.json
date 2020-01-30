@@ -1,15 +1,20 @@
 {
   "name": "brainarchives",
-  "version": "1.1.3",
+  "version": "1.2.0",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
   "description": "",
   "author": {
     "name": "Michal Tynior",
     "email": "michal.git@tynior.com"
   },
-  "keywords": ["ghost-theme"],
+  "keywords": [
+    "ghost-theme"
+  ],
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",

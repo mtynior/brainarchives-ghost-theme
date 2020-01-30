@@ -1,24 +1,24 @@
 .comments {
-    margin-top:     $comments-margin-top;
-    margin-bottom:  $comments-margin-bottom;
-    max-width:      $comments-max-width;
+  margin-top: $comments-margin-top;
+  margin-bottom: $comments-margin-bottom;
+  max-width: $comments-max-width;
 }
 
 .comments-header {
-    @extend .text-center;
+  @extend .text-center;
 
-    > h3 {
-        margin: $comments-header-margin;
-    }
+  > h3 {
+    margin: $comments-header-margin;
+  }
 
-    > span {
-        font-size: $comments-header-font-size;
-    }
+  > span {
+    font-size: $comments-header-font-size;
+  }
 }
 
 .comments-disqus {
-    margin:             $comments-disqus-margin-top auto $comments-disqus-margin-bottom auto; 
-    padding:            $comments-disqus-padding;
-    background-color:   $comments-disqus-bg;
-    //@include box-shadow($comments-disqus-shadow);
+  margin: $comments-disqus-margin-top auto $comments-disqus-margin-bottom auto;
+  padding: $comments-disqus-padding;
+  background-color: $comments-disqus-bg;
+  //@include box-shadow($comments-disqus-shadow);
 }
