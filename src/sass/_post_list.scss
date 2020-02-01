@@ -1,7 +1,6 @@
 .post-list {
   display: grid;
   margin: 0 auto;
-  max-width: 1000px;
   grid-gap: 10px 10px;
   grid-template-columns: 1fr 1fr minmax(1rem, 800px) 1fr 1fr;
 }

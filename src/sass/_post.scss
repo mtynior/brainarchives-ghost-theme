@@ -5,7 +5,7 @@
 }
 .post {
   @extend .post-grid;
-  margin-top: 1rem;
+  margin-top: 3.5rem;
 }
 
 .post > * {
@@ -29,6 +29,7 @@
   margin: 0 auto;
   @include clip-path($post-feature-image-clip);
   grid-column: 3 / -3;
+  object-fit: cover;
 }
 
 .post-title {

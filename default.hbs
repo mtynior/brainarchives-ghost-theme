@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="{{asset "css/brainarchives.min.css"}}">
 
+    <script src="https://kit.fontawesome.com/bfbfdc2a5b.js" crossorigin="anonymous"></script>
     {{ghost_head}}
 </head>
 
@@ -25,13 +26,11 @@
         {{{body}}}
     </main>
     {{> "footer" }}
-    {{> "cookie-notice"}}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script defer src="{{asset "js/fontawesome-all.min.js"}}"></script>
 
     {{ghost_foot}}
     {{!> "disqus" }}
+    {{> "cookie-notice"}}
+    {{> "theme-switcher"}}
     {{> "code-highlighter"}}
 
 </body>

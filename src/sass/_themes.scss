@@ -1,0 +1,49 @@
+// Colors
+$white: #fff !default;
+$black-bean: #212221 !default;
+$shark: #272828 !default;
+$night-rider: #333 !default;
+$tundora: #444 !default;
+$mercury: #9e9e9e !default;
+$gainsboro: #ddd !default;
+$red: #eb1e39 !default;
+$strong-red: #b9132c !default;
+$deep-cerulean: #0077b5 !default;
+$bermuda-gray: #718daa !default;
+$prussian-blue: #004266 !default;
+
+// Light theme
+:root {
+  --surface-background: #{$white};
+  --surface-onBackground: #{$shark};
+
+  --primary: #{$red};
+  --primary-onPrimary: #{$white};
+  --primary-dark: #{$strong-red};
+
+  --secondary: #{$deep-cerulean};
+  --secondary-onSecondary: #{$white};
+  --secondary-light: #{$bermuda-gray};
+  --secondary-dark: #{$prussian-blue};
+
+  --tertiary: #{$night-rider};
+  --tertiary-onTertiary: #{$white};
+  --tertiary-very-light: #{$gainsboro};
+  --tertiary-light: #{$tundora};
+
+  --code-bg: #{$white};
+  --code-color: #{$red};
+  --code-border: 1px solid #{$gainsboro};
+}
+
+// Dark theme
+body[data-theme="dark"] {
+  --surface-background: #{$black-bean};
+  --surface-onBackground: #{$gainsboro};
+
+  --tertiary-light: #{$mercury};
+
+  --code-bg: #{$night-rider};
+  --code-color: #{$gainsboro};
+  --code-border: none;
+}

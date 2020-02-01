@@ -17,23 +17,24 @@
     padding: 1rem 0;
     max-width: $header-navigation-max-width;
     text-align: center;
+  }
 
-    > * > .logo-image {
-      width: $header-logo-width;
+  .logo-image {
+    width: $header-logo-width;
+    fill: $header-logo-image-fill-color;
 
-      @include breakpoint(sm) {
-        width: $header-logo-width * 0.75;
-      }
+    @include breakpoint(sm) {
+      width: $header-logo-width * 0.75;
     }
+  }
 
-    a {
-      color: $header-logo-link-color;
-    }
+  a {
+    color: $header-logo-link-color;
+  }
 
-    a:hover {
-      color: $header-logo-hover-link-color;
-      text-decoration: $header-logo-hover-link-decoration;
-    }
+  a:hover {
+    color: $header-logo-hover-link-color;
+    text-decoration: $header-logo-hover-link-decoration;
   }
 
   .navbar {

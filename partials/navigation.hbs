@@ -1,5 +1,7 @@
 <nav class="navbar">
-    {{#foreach navigation}}                
-        <a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a>
+    {{#foreach navigation}}
+    <a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a>
     {{/foreach}}
+
+    <a href="#" onclick="toggleTheme()"><i class="fas fa-adjust"></i></a>
 </nav>

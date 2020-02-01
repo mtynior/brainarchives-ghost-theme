@@ -13,11 +13,11 @@
   font-size: $tag-font-size;
   margin: 5px;
   padding: 3px 4px 3px;
-  border: 1px solid #ddd;
-  @include border-radius(3px);
   background-clip: padding-box;
   background-color: $tag-bg-color;
   color: $tag-link-color;
+  border: $tag-border;
+  @include border-radius(3px);
 
   &:hover {
     color: $tag-link-hover-color;

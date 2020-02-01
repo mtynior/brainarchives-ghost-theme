@@ -1,14 +1,19 @@
 .kg-bookmark-card {
   grid-column: 3 / -3;
+
+  figcaption {
+    margin-top: 0.5rem;
+  }
 }
 
 .kg-bookmark-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+
   color: $body-color;
   text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  @include box-shadow($shadow);
 }
 
 .kg-bookmark-container:hover {
@@ -24,6 +29,7 @@
 
 .kg-bookmark-title {
   font-weight: 600;
+  color: $post-figcaption-color;
 }
 
 .kg-bookmark-metadata,

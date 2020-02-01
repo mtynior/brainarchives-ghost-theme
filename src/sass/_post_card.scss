@@ -16,11 +16,12 @@
 }
 
 .post-card-feature-image {
-  margin: 0 auto;
-  display: block;
+  width: 100%;
   height: auto;
-  max-height: $post-card-feature-image-height;
-  @include clip-path($post-card-feature-image-clip);
+  max-height: $post-feature-image-height;
+  margin: 0 auto;
+  @include clip-path($post-feature-image-clip);
+  object-fit: cover;
 }
 
 .post-card-title {

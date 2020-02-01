@@ -10,11 +10,11 @@ samp {
 
 code {
   padding: 3px 4px 3px;
-  border: 1px solid #ddd;
+  border: $code-border;
   @include border-radius(3px);
   background-clip: padding-box;
-  color: $red;
-  background-color: white;
+  color: $code-color;
+  background-color: $code-bg;
   font-size: $code-font-size;
 
   @include breakpoint(sm) {
@@ -39,12 +39,12 @@ pre {
   > code {
     color: inherit;
     border: none;
-    background-color: $code-bg;
+    background-color: $code-window-code-bg;
     font-weight: $code-font-weight;
   }
 }
 
 .hljs {
-  background-color: $code-bg;
+  background-color: $code-window-code-bg;
   width: auto;
 }
