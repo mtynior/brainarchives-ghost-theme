@@ -351,25 +351,24 @@ body[data-theme="dark"] {
   --code-color: #ddd;
   --code-border: none; }
 
-html,
-body {
-  color: var(--surface-onBackground);
-  font-family: "Lato", arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
+html {
   margin: 0;
   padding: 0;
-  background-color: var(--surface-background); }
+  font-family: "Lato", arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4; }
   @media (max-width: 499.98px) {
-    html,
-    body {
+    html {
       font-size: 0.65rem;
       line-height: 1.05; } }
   @media (max-width: 767.98px) {
-    html,
-    body {
+    html {
       font-size: 0.75rem;
       line-height: 1.225; } }
+
+body {
+  background-color: var(--surface-background);
+  color: var(--surface-onBackground); }
 
 p {
   margin: 0;
