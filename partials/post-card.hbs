@@ -4,19 +4,27 @@
         <img class="post-card-feature-image" src={{feature_image}} />
     </a>
 {{/if}}
-    <section class="post-card-title">
-        <a href="{{url}}">
-            <h1>{{title}}</h1>
-        </a>
-        <hr class="post-card-meta-separator" />
-        <time class="post-card-meta-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
-    </section>
-    <section class="post-card-expert">
-    {{#has tag="#article"}}
-        <p>{{excerpt}} <span> <a href={{url}}>Continue &rarr;</a></span></p>
-    {{else}}
-        {{content}}
-    {{/has}}    
-    </section>
+    <div class="post-card-info">
+        <section class="post-card-title">
+            <time class="post-card-meta-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+            <a href="{{url}}">
+                <h1>{{title}}</h1>
+            </a>
+        </section>
+        <section class="post-card-expert">
+            <p>{{excerpt}} <span>
+                <a href="{{url}}">→</a>
+            </span></p>
+        </section>
+        {{#has tag="count:>0"}}
+        <section class="post-card-tags">
+            {{#foreach tags limit="3"}}
+            <a href="{{url}}" title="{{name}}" class="post-card-tag ">
+                <span itemprop="keywords">{{name}}</span>
+            </a>
+            {{/foreach}}
+        </section>
+        {{/has}}
+    </div>
 </article>
 

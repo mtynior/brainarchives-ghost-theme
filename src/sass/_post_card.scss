@@ -3,6 +3,9 @@
   margin-bottom: $post-card-margin-bottom;
   width: 100%;
   overflow: hidden;
+  background-color: $code-bg;
+  @include border-radius($code-window-border-radius);
+  @include box-shadow($code-window-shadow);  
 
   @include breakpoint(xs) {
     margin-top: $post-card-xs-margin-top;
@@ -20,12 +23,16 @@
   height: auto;
   max-height: $post-feature-image-height;
   margin: 0 auto;
-  @include clip-path($post-feature-image-clip);
   object-fit: cover;
 }
 
+.post-card-info {
+  margin: 0;
+  padding: 1rem;
+}
+
 .post-card-title {
-  @extend .text-center;
+  @extend .text-left;
 
   a {
     color: $post-card-title-link-color;
@@ -42,12 +49,42 @@
 }
 
 .post-card-meta-time {
-  @extend .text-center;
+  @extend .text-left;
   color: $post-card-meta-time-color;
   font-size: $post-card-meta-time-font-size;
+  font-weight: bold;
   display: block;
 }
 
 .post-card-expert {
-  padding: $post-card-expert-padding;
+  a {
+    color: $post-card-title-hover-link-color;
+  }
+
+  a:hover {
+    text-decoration: $post-card-title-hover-link-decoration;
+    color: $post-card-title-link-color;
+  }
+}
+
+.post-card-tags {
+  margin-top: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+}
+
+.post-card-tag {
+  font-size: $tag-font-size;
+  padding: 3px 4px 3px;
+  background-clip: padding-box;
+  background-color: $post-card-tag-bg-color;
+  color: $post-card-tag-color;
+  border: $tag-border;
+  @include border-radius(3px);
+
+  &:hover {
+    color: $post-card-tag-color;
+  }
 }

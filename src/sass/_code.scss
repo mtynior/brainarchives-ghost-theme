@@ -9,13 +9,13 @@ samp {
 }
 
 code {
-  padding: 3px 4px 3px;
   border: $code-border;
   @include border-radius(3px);
   background-clip: padding-box;
-  color: $code-color;
   background-color: $code-bg;
   font-size: $code-font-size;
+  color: $code-colors;
+  padding: 3px;
 
   @include breakpoint(sm) {
     font-size: $post-figcaption-font-size * 0.75;
@@ -28,11 +28,10 @@ code {
 
 pre {
   overflow: auto;
-  padding: 0 14px;
+  padding: 0;
   box-sizing: border-box;
   width: 100%;
-  margin: 0;
-  background-color: $code-window-code-bg;
+  margin: 2rem 0 2rem;
   @include border-radius($code-window-border-radius);
   @include box-shadow($code-window-shadow);
 
@@ -45,6 +44,5 @@ pre {
 }
 
 .hljs {
-  background-color: $code-window-code-bg;
-  width: auto;
+  width: 100%;
 }

@@ -45,8 +45,8 @@ $h4-font-size: 1.15rem !default;
 $h5-font-size: 1rem !default;
 $h6-font-size: 0.75rem !default;
 
-$headings-margin-top: ($spacer * 0.9) !default;
-$headings-margin-bottom: ($spacer * 0.9) !default;
+$headings-margin-top: ($spacer * 1.25) !default;
+$headings-margin-bottom: ($spacer * 1.25) !default;
 $headings-font-family: inherit !default;
 $headings-font-weight: 600 !default;
 $headings-line-height: 1.2 !default;
@@ -74,10 +74,13 @@ $list-item-line-height-base: $line-height-base * 1.2;
 
 // Blockquote
 $blockquote-bg: v(surface-background);
-$blockquote-padding-vertical: 0.25rem;
+$blockquote-margin-vertical: 1.5rem;
+$blockquote-margin-horizontal: 0;
+$blockquote-padding-vertical: 0.75rem;
 $blockquote-padding-horizontal: 2rem;
 $blockquote-border-color: v(primary);
-$blockquote-border-width: 3px;
+$blockquote-border-width: 8px;
+$blockquote-shadow: $shadow;
 
 // Header
 $header-height: 44px !default;
@@ -120,7 +123,7 @@ $post-card-xs-margin-bottom: 0.5rem !default;
 $post-card-sm-margin-top: 1rem !default;
 $post-card-sm-margin-bottom: 1rem !default;
 
-$post-card-feature-image-height: 400px !default;
+$post-card-feature-image-height: 600px !default;
 $post-card-feature-image-clip: polygon(0 0, 100% 0, 100% 90%, 0 100%) !default;
 
 $post-card-title-font-size: $font-size-xxl !default;
@@ -129,10 +132,11 @@ $post-card-title-hover-link-color: $link-hover-color !default;
 $post-card-title-hover-link-decoration: none !default;
 
 $post-card-meta-separator-width: 200px !default;
-$post-card-meta-time-color: v(tertiary-dark) !default;
+$post-card-meta-time-color: v(primary) !default;
 $post-card-meta-time-font-size: 1rem !default;
 
-$post-card-expert-padding: 1rem 0 0 0 !default;
+$post-card-tag-color: v(primary-onPrimary);
+$post-card-tag-bg-color: v(primary);
 
 // Post
 $post-feature-image-width: 100% !default;
@@ -191,10 +195,10 @@ $paging-pager-text-tranform: uppercase;
 
 // Code
 $code-bg: v(code-bg) !default;
-$code-color: v(code-color) !default;
+$code-colors: v(code-color) !default;
 $code-border: v(code-border) !default;
 $code-font-family: $font-family-monospace !default;
-$code-font-size: $font-size-base * 0.8 !default;
+$code-font-size: $font-size-base * 0.85 !default;
 $code-font-weight: normal !default;
 
 // Code Window

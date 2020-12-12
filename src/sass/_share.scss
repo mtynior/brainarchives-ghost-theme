@@ -28,7 +28,7 @@
   margin: 0 $share-spacing;
   width: $share-link-radius;
   height: $share-link-radius;
-  line-height: $share-link-radius;
+  line-height: $share-link-radius * 0.9;
   font-size: $share-font-size;
   @include border-radius(50%);
 

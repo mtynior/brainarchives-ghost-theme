@@ -2,7 +2,7 @@
   display: grid;
   margin: 0 auto;
   grid-gap: 10px 10px;
-  grid-template-columns: 1fr 1fr minmax(1rem, 800px) 1fr 1fr;
+  grid-template-columns: 1fr 1fr minmax(1rem, 700px) 1fr 1fr;
 }
 
 .post-list > * {

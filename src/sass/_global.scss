@@ -98,9 +98,10 @@ li {
 
 blockquote {
   background-color: $blockquote-bg;
-  margin: 0;
+  margin: $blockquote-margin-vertical $blockquote-margin-horizontal;
   padding: $blockquote-padding-vertical $blockquote-padding-horizontal;
   width: 100%;
   box-sizing: border-box;
   border-left: $blockquote-border-width solid $blockquote-border-color;
+  @include box-shadow($blockquote-shadow);
 }

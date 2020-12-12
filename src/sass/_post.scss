@@ -27,9 +27,8 @@
   height: auto;
   max-height: $post-feature-image-height;
   margin: 0 auto;
-  @include clip-path($post-feature-image-clip);
-  grid-column: 3 / -3;
-  object-fit: cover;
+  grid-column: 1 / -1 !important;
+  object-fit: contain;
 }
 
 .post-title {
